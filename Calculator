@@ -1,0 +1,49 @@
+def add(n1, n2):
+    return n1+n2
+
+
+def sub(n1, n2):
+    return n1-n2
+
+
+def mul(n1, n2):
+    return n1*n2
+
+
+def div(n1, n2):
+    if n2 == 0:
+        print("ERROR")
+    else:
+        return n1/n2
+
+
+def ex(n1, n2):
+    s = 1
+    while n2 != 0:
+        s *= n1
+        n2 -= 1
+    return s
+
+
+def sq(n1, n2):
+    x = n1**(1/n2)
+    return x
+
+
+a = int(input("Enter the number\t"))
+b = int(input("Enter the number\t"))
+f1 = input("Enter the operator\t")
+if f1 == "+":
+    print(str(a)+"+"+str(b)+"=\t"+str(add(a,b)))
+elif f1 == "-":
+    print(str(a)+"-"+str(b)+"=\t"+str(sub(a,b)))
+elif f1 == "*":
+    print(str(a)+"*"+str(b)+"=\t"+str(mul(a,b)))
+elif f1 == "/":
+    print(str(a)+"/"+str(b)+"=\t"+str(div(a,b)))
+elif f1 == "^":
+    print(str(a)+"^"+str(b)+"=\t"+str(ex(a,b)))
+elif f1 == "!^":
+    print(str(a)+"!^"+str(b)+"=\t"+str(sq(a,b)))
+else:
+    print("none")
