@@ -152,18 +152,7 @@ if __name__ == "__main__":
 	clear = Button(gui, text='Clear', fg='black', bg='pink',
 				command=clear, height=1, width=7)
 	clear.grid(row=5, column='1')
-
-	Decimal= Button(gui, text='.', fg='black', bg='pink',
-					command=lambda: press('.'), height=1, width=7)
-	Decimal.grid(row=6, column=0)
-
-        Power= Button(gui, text='x^y', fg='black' , bg='pink',
-	                        command=lambda: press("^"), height=1, width=7)
-	Power.grid(row=6, column=1)
-
-        Root=Button(gui, text='x√y' , fg='black' , bg='pink',
-	                        command=lambda: press("~^"), height=1, width=7)
-        Root.grid(row=6, column=2)
+ 
 	                        
 	# start the GUI
 	gui.mainloop()
